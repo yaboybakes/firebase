@@ -6,3 +6,14 @@
 .jumbotron {
   border: 3px solid black;
 }
+
+.views {
+  border: 3px solid black;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.chat {
+  border: 3px solid black;
+  height: 150px;
+}

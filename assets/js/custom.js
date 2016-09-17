@@ -26,4 +26,17 @@ console.log("working");
 
   connectionsRef.on("value", function(snap) {
   	console.log(snap.numChildren());
+    //Update chat, etc
+  });
+
+
+  $(document).ready(function() {
+    //Display characters
+    //User1 clicks choice
+    //Data saved in database
+    //User2 joins
+    //User2 clicks choice
+    //Data saved in database
+    //Values retrieved from database
+    //Winner is displayed, results updated
   });
