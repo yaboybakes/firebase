@@ -11,5 +11,19 @@ console.log("working");
   firebase.initializeApp(config);
 
   var db = firebase.database();
-  var connectionsRef = database.ref("/connections");
-  var connectedRef = database.ref(".info/connected");
+  var connectionsRef = db.ref("/connections");
+  var connectedRef = db.ref(".info/connected");
+
+  connectedRef.on("value", function(snap) {
+
+    var successful_connect = snap.val();
+  	if(successful_connect) {
+  		var con = connectionsRef.push(true);
+  		con.onDisconnect().remove();
+  	};
+
+  });
+
+  connectionsRef.on("value", function(snap) {
+  	console.log(snap.numChildren());
+  });
