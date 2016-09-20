@@ -17,3 +17,24 @@
   border: 3px solid black;
   height: 150px;
 }
+
+.ninja {
+  background-image: url("../img/ninja.jpg");
+  background-size: 300px 220px;
+  height: 195px;
+  margin-bottom: 30px;
+}
+
+.bear {
+  background-image: url("../img/bear.png");
+  background-size: 300px 220px;
+  height: 195px;
+  margin-bottom: 30px;
+}
+
+.squirrel {
+  background-image: url("../img/squirrel.jpg");
+  background-size: 300px 220px;
+  height: 195px;
+  margin-bottom: 30px;
+}

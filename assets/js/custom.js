@@ -1,5 +1,3 @@
-console.log("working");
-
 // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDme8VQOnkfv7hkkvsIomLAvjPruv9SVgI",
@@ -15,7 +13,6 @@ console.log("working");
   var connectedRef = db.ref(".info/connected");
 
   connectedRef.on("value", function(snap) {
-
     var successful_connect = snap.val();
   	if(successful_connect) {
   		var con = connectionsRef.push(true);
@@ -29,8 +26,37 @@ console.log("working");
     //Update chat, etc
   });
 
-
+  var array = {p1: "ninja",versus:"squirrel",p2:"bear"};
+  var name = "";
   $(document).ready(function() {
+    startGame();
+
+    function startGame() {
+      promptName();
+      displayImgs();
+    }
+
+    function promptName() {
+      name = prompt("What is your name?");
+    }
+
+    function displayImgs() {
+      var img1 = $('<div class="ninja">');
+      img1.appendTo('#p1');
+      var img2 = $('<div class="squirrel">');
+      img2.appendTo('#versus');
+      var img3 = $('<div class="bear">');
+      img3.appendTo('#p2');
+    }
+
+    $('.views').click(function() {
+      console.log(array[$(this).attr('id')]);
+      db.ref('/bidderData').set({
+
+  		});
+    });
+
+
     //Display characters
     //User1 clicks choice
     //Data saved in database
