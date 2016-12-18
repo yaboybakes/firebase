@@ -1,40 +1,132 @@
-.jumbotron > h1 {
-  text-align:center;
-  font-family: 'Monofett', cursive;
+body{
+  background-color: #E4F0D0;
+}
+header{
+  background-color: #C2D8B9;
 }
 
-.jumbotron {
-  border: 3px solid black;
+h1{
+  font-size: 36px;
+  text-align: center;
+  padding:15px;
 }
 
-.views {
-  border: 3px solid black;
-  height: 200px;
-  margin-bottom: 30px;
+h2{
+  font-size: 24px;
 }
 
-.chat {
-  border: 3px solid black;
+input{
+  background-color: #FFFCF7;
+}
+
+#sizer{
+  width:1024px;
+  margin: 0 auto;
+}
+
+#swapzone{
+  width:75%;
+  margin: 25px auto;
+  text-align: center;
+}
+
+#swapzone input {
+  width:200px;
+  height:30px;
+  font-size: 30px;
+}
+#swapzone button {
+  width:100px;
+  height:36px;
+  font-size: 22px;
+  vertical-align: top;
+}
+
+
+#currentturn{
+  width:75%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+#gamediv{
+  text-align: center;
+}
+#player1, #result, #player2{
+  width:25%;
+  height:200px;
+  display:inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin:2%;
+  text-align: center;
+  padding:10px;
+  vertical-align: top;
+  position: relative;
+}
+
+#player1name, #player2name{
+  font-size:28px;
+  margin-bottom: 15px;
+}
+
+#player1chosen, #player2chosen{
+  margin-top: 25px;
+  font-size: 60px;
+}
+
+li{
+  font-size: 24px;
+  margin:12px 0;
+}
+.outcomes{
+  position: absolute;
+  bottom: 10px;
+  width:90%;
+  text-align: center;
+}
+.outcometrackers{
+  display:inline-block;
+}
+
+#result h2{
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+#chat{
+  position: relative;
+  width:600px;
+  margin: 20px auto;
   height: 150px;
+  padding: 10px;
+}
+#chatmessages{
+  overflow:auto;
+  background-color: #FFFCF7;
+  height:125px;
+}
+#chatbar{
+  position:absolute;
+  bottom:10px;
+}
+#chatinput{
+  width:550px;
+}
+#chatsend{
+  width:40px;
 }
 
-.ninja {
-  background-image: url("../img/ninja.jpg");
-  background-size: 300px 220px;
-  height: 195px;
-  margin-bottom: 30px;
+.player1{
+  color: #419D78;
+
 }
 
-.bear {
-  background-image: url("../img/bear.png");
-  background-size: 300px 220px;
-  height: 195px;
-  margin-bottom: 30px;
+.player2{
+  color: #2D3047;
 }
 
-.squirrel {
-  background-image: url("../img/squirrel.jpg");
-  background-size: 300px 220px;
-  height: 195px;
-  margin-bottom: 30px;
+.player0{
+  background-color: lightgrey;
+  color:black;
 }
